@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Flip to Pause</title>
+  <style>
+    :root {
+      --bg: #050505;
+      --card: #0e0e0e;
+      --border: #1e1e1e;
+      --text: #eaeaea;
+      --muted: #8c8c8c;
+      --accent: #b2ff05;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      line-height: 1.65;
+      padding: 40px 20px 64px;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+    .badge {
+      display: inline-block;
+      color: var(--accent);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    h1 {
+      font-size: 1.65rem;
+      letter-spacing: 0.04em;
+      margin-bottom: 8px;
+    }
+    .updated {
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+    section {
+      margin-bottom: 28px;
+      padding: 20px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+    h2 {
+      color: var(--accent);
+      font-size: 1rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    p {
+      color: var(--muted);
+      font-size: 0.92rem;
+      margin-bottom: 10px;
+    }
+    p:last-child {
+      margin-bottom: 0;
+    }
+    strong {
+      color: var(--text);
+    }
+    ul {
+      list-style: none;
+      margin-top: 8px;
+    }
+    li {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+      padding-left: 16px;
+      position: relative;
+    }
+    li:last-child {
+      margin-bottom: 0;
+    }
+    li::before {
+      content: "•";
+      color: var(--accent);
+      position: absolute;
+      left: 0;
+    }
+    code {
+      color: var(--text);
+      background: #181818;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.85em;
+    }
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.8rem;
+      border-top: 1px solid var(--border);
+      padding-top: 24px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">Flip to Pause</div>
+      <h1>Privacy Policy</h1>
+      <div class="updated">Last updated: November 15, 2026</div>
+    </header>
+
+    <section>
+      <h2>1. Zero Data Collection</h2>
+      <p><strong>Flip to Pause does not collect, store, transmit, or share any personal or non-personal user data.</strong></p>
+      <ul>
+        <li><strong>No Internet Access:</strong> The app (`dev.omkartenkale.fliptopause`) does not request the <code>android.permission.INTERNET</code> permission. It cannot send any information over the internet.</li>
+        <li><strong>No Analytics or Tracking:</strong> There are no third-party SDKs, analytics, crash reporters, or advertising frameworks included in the app.</li>
+        <li><strong>No Account Required:</strong> You do not need to create an account or provide any personal details to use the app.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>2. How Sensor Data is Used</h2>
+      <p>To provide its core functionality, Flip to Pause reads orientation data from your device's built-in gravity or accelerometer sensor:</p>
+      <ul>
+        <li>Sensor readings are processed <strong>entirely in real-time in your device's memory (RAM)</strong> to determine whether to pause or resume active media playback.</li>
+        <li>Sensor data is <strong>never</strong> recorded, logged, saved to disk, or shared with any external party.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. Local Storage (Device Preferences)</h2>
+      <p>Your app settings (Pause Delay, Tilt Sensitivity, and Flip Direction) are stored locally on your device using standard Android <code>SharedPreferences</code>. This data never leaves your device and is automatically deleted if you uninstall the app or clear the app's storage.</p>
+    </section>
+
+    <section>
+      <h2>4. Permissions Used</h2>
+      <p>Flip to Pause requests only the minimum system permissions required to function:</p>
+      <ul>
+        <li><strong>Foreground Service:</strong> Allows the app to continue detecting device orientation while the screen is off or while you are using other media apps.</li>
+        <li><strong>Post Notifications:</strong> Displays a persistent status notification while the service is active so you can see its status and turn it off at any time.</li>
+        <li><strong>Vibrate:</strong> Provides subtle haptic feedback when toggling settings or when playback pauses/resumes.</li>
+        <li><strong>Ignore Battery Optimizations:</strong> Optional setting that helps prevent the system from unexpectedly stopping the background service.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>5. Children's Privacy &amp; Open Source</h2>
+      <p>Because Flip to Pause does not collect any data from any user, it complies with the Children's Online Privacy Protection Act (COPPA) and global privacy regulations. Flip to Pause is open source, allowing anyone to inspect the source code and verify that no data collection occurs.</p>
+    </section>
+
+    <section>
+      <h2>6. Contact</h2>
+      <p>If you have any questions about this Privacy Policy, please open an issue on the project's GitHub repository or contact the developer:</p>
+      <ul>
+        <li><strong>Developer:</strong> Omkar Tenkale</li>
+        <li><strong>Package Name:</strong> <code>dev.omkartenkale.fliptopause</code></li>
+      </ul>
+    </section>
+
+    <footer>
+      &copy; 2026 Omkar Tenkale &middot; Flip to Pause
+    </footer>
+  </main>
+</body>
+</html>
